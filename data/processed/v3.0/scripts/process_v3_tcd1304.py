@@ -506,7 +506,8 @@ def write_reports(
 
 ## 主要结论
 
-- 所有 60 条样本都能按留一模板正确分组，说明这批数据的组间可分性明显优于 V1.0。
+- 所有 60 条样本都能按文件名解析为 12 组，并完成组内重复性与组间相关矩阵汇总。
+- 从组均值曲线和组间相关矩阵看，这批数据的组间差异明显优于 V1.0。
 - 组内平均相关系数见 `data/04_quality_control/group_repeatability_stats.csv`，其中第 12 组最稳定，但其物理意义需要结合采集条件确认。
 - 组间相关矩阵见 `data/04_quality_control/between_group_correlation.csv`。
 
