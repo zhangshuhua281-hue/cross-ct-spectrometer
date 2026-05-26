@@ -1,0 +1,62 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build outputs
+build/
+Build/
+Output/
+Listing/
+Listings/
+Objects/
+Debug/
+Release/
+manual-output/
+manual-output-rebuild/
+*.o
+*.obj
+*.d
+*.a
+*.lib
+*.elf
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.crf
+*.dep
+*.htm
+*.html
+*.log
+
+# Keil local/user files
+*.uvoptx
+*.uvguix.*
+*.uvgui.*
+*.scvd
+DebugConfig/
+
+# Arduino / embedded local outputs
+compile_commands.json
+includes.cache
+libraries.cache
+build.options.json
+build_opt.h
+
+# MATLAB generated binary figures
+*.fig
+
+# Local binaries and videos
+*.exe
+*.dll
+*.mp4

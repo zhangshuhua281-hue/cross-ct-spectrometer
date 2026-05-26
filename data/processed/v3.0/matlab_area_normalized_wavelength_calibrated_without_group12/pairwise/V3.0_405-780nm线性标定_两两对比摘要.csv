@@ -1,0 +1,5 @@
+GroupA,GroupB,NameA,NameB,RMSE,MaxAbsDiff,MeanAbsDiff,AreaDiff_nm,OutputPng
+4,6,紫色,紫色偏蓝色,0.0188237921337693,0.038323497896979,0.0151231867772699,-3.11773709180822,data/processed/v3.0/matlab_area_normalized_wavelength_calibrated_without_group12\pairwise\V3.0_04-06_紫色_vs_紫色偏蓝色_405-780nm线性标定面积归一化对比.png
+1,5,深粉红色,粉色偏紫色,0.0384698009694807,0.074892266434179,0.0309591393787489,-6.88140022872251,data/processed/v3.0/matlab_area_normalized_wavelength_calibrated_without_group12\pairwise\V3.0_01-05_深粉红色_vs_粉色偏紫色_405-780nm线性标定面积归一化对比.png
+3,10,橙色,卡其色,0.0475503864578387,0.097632665717918,0.0365627217358733,-8.21123573129088,data/processed/v3.0/matlab_area_normalized_wavelength_calibrated_without_group12\pairwise\V3.0_03-10_橙色_vs_卡其色_405-780nm线性标定面积归一化对比.png
+9,8,黄色偏绿色,深绿色,0.0513840389820023,0.107884669204366,0.0395857380629168,11.3853218636219,data/processed/v3.0/matlab_area_normalized_wavelength_calibrated_without_group12\pairwise\V3.0_09-08_黄色偏绿色_vs_深绿色_405-780nm线性标定面积归一化对比.png

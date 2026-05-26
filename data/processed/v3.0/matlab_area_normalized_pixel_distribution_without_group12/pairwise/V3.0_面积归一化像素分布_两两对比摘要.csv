@@ -1,0 +1,5 @@
+GroupA,GroupB,NameA,NameB,RMSE,MaxAbsDiff,MeanAbsDiff,AreaDiff,OutputPng
+4,6,紫色,紫色偏蓝色,0.0126073937634775,0.038323497896979,0.0091449124083611,2.8599345114344e-13,data/processed/v3.0/matlab_area_normalized_pixel_distribution_without_group12\pairwise\V3.0_04-06_紫色_vs_紫色偏蓝色_面积归一化像素分布对比.png
+1,5,深粉红色,粉色偏紫色,0.0269257629187231,0.0748922664341787,0.0198454292025556,-1.10134124042816e-13,data/processed/v3.0/matlab_area_normalized_pixel_distribution_without_group12\pairwise\V3.0_01-05_深粉红色_vs_粉色偏紫色_面积归一化像素分布对比.png
+3,10,橙色,卡其色,0.0318451546633509,0.0976326657179183,0.0228101787847856,-2.38031816479634e-13,data/processed/v3.0/matlab_area_normalized_pixel_distribution_without_group12\pairwise\V3.0_03-10_橙色_vs_卡其色_面积归一化像素分布对比.png
+9,8,黄色偏绿色,深绿色,0.0361315672473817,0.107884669204368,0.0272920001239334,1.06581410364015e-13,data/processed/v3.0/matlab_area_normalized_pixel_distribution_without_group12\pairwise\V3.0_09-08_黄色偏绿色_vs_深绿色_面积归一化像素分布对比.png

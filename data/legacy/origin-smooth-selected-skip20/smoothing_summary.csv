@@ -1,0 +1,9 @@
+File,YColumn,SkippedRows,RawMaxValue,MedianWindow,SGolayWindow,SGolayOrder,MaxSmoothedNormalized,OutputCsv
+data/raw/v1.0-cards/1-1TCD1304采集数据.txt,ADC,20,2877,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\1-1TCD1304采集数据_skip20_smoothed.csv
+data/raw/v1.0-cards/2-1TCD1304采集数据.txt,ADC,20,2865,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\2-1TCD1304采集数据_skip20_smoothed.csv
+data/raw/v1.0-cards/3-1TCD1304采集数据.txt,ADC,20,2920,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\3-1TCD1304采集数据_skip20_smoothed.csv
+data/raw/v1.0-cards/4-1TCD1304采集数据.txt,ADC,20,2959,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\4-1TCD1304采集数据_skip20_smoothed.csv
+data/raw/v1.0-cards/6-1TCD1304采集数据.txt,ADC,20,2923,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\6-1TCD1304采集数据_skip20_smoothed.csv
+data/raw/v1.0-cards/7-1TCD1304采集数据.txt,ADC,20,2924,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\7-1TCD1304采集数据_skip20_smoothed.csv
+data/raw/v1.0-cards/8-1TCD1304采集数据.txt,ADC,20,2978,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\8-1TCD1304采集数据_skip20_smoothed.csv
+data/raw/v1.0-cards/镜片1TCD1304采集数据.txt,ADC,20,2347,9,151,3,1,data/legacy/origin-smooth-selected-skip20/data\镜片1TCD1304采集数据_skip20_smoothed.csv

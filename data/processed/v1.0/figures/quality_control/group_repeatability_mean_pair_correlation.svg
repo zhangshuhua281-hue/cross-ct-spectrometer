@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<style>
+  text { font-family: Arial, "Microsoft YaHei", sans-serif; fill: #222; }
+  .title { font-size: 18px; font-weight: 700; }
+  .label { font-size: 14px; }
+  .tick { font-size: 12px; fill: #444; }
+  .legend { font-size: 12px; }
+  .grid { stroke: #dddddd; stroke-width: 1; }
+</style>
+<text x="450.0" y="28" text-anchor="middle" class="title">Group repeatability: mean pair correlation</text>
+<rect x="76" y="52" width="788" height="392" fill="#ffffff" stroke="#333333" stroke-width="1"/>
+<line x1="76" y1="444.00" x2="864" y2="444.00" class="grid"/>
+<text x="68" y="448.00" text-anchor="end" class="tick">0.9950</text>
+<line x1="76" y1="365.60" x2="864" y2="365.60" class="grid"/>
+<text x="68" y="369.60" text-anchor="end" class="tick">0.9960</text>
+<line x1="76" y1="287.20" x2="864" y2="287.20" class="grid"/>
+<text x="68" y="291.20" text-anchor="end" class="tick">0.9970</text>
+<line x1="76" y1="208.80" x2="864" y2="208.80" class="grid"/>
+<text x="68" y="212.80" text-anchor="end" class="tick">0.9980</text>
+<line x1="76" y1="130.40" x2="864" y2="130.40" class="grid"/>
+<text x="68" y="134.40" text-anchor="end" class="tick">0.9990</text>
+<line x1="76" y1="52.00" x2="864" y2="52.00" class="grid"/>
+<text x="68" y="56.00" text-anchor="end" class="tick">1.0000</text>
+<rect x="92.00" y="60.07" width="94.29" height="383.93" fill="#1f77b4"/>
+<text x="139.14" y="468" text-anchor="middle" class="tick">card01</text>
+<rect x="202.29" y="55.62" width="94.29" height="388.38" fill="#1f77b4"/>
+<text x="249.43" y="468" text-anchor="middle" class="tick">card02</text>
+<rect x="312.57" y="55.31" width="94.29" height="388.69" fill="#1f77b4"/>
+<text x="359.71" y="468" text-anchor="middle" class="tick">card03</text>
+<rect x="422.86" y="57.18" width="94.29" height="386.82" fill="#1f77b4"/>
+<text x="470.00" y="468" text-anchor="middle" class="tick">card04</text>
+<rect x="533.14" y="56.65" width="94.29" height="387.35" fill="#1f77b4"/>
+<text x="580.29" y="468" text-anchor="middle" class="tick">card06</text>
+<rect x="643.43" y="56.29" width="94.29" height="387.71" fill="#1f77b4"/>
+<text x="690.57" y="468" text-anchor="middle" class="tick">card07</text>
+<rect x="753.71" y="57.00" width="94.29" height="387.00" fill="#1f77b4"/>
+<text x="800.86" y="468" text-anchor="middle" class="tick">card08</text>
+<text x="470.0" y="496" text-anchor="middle" class="label">Color card group</text>
+</svg>

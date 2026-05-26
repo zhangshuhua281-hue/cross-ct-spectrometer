@@ -1,0 +1,5 @@
+GroupA,GroupB,NameA,NameB,RMSE,MaxAbsDiff,MeanAbsDiff,AreaDiff,OutputPng
+4,6,紫色,紫色偏蓝色,0.0226991487200378,0.053505479353382,0.0197242945006389,-71.5210528608002,data/processed/v3.0/matlab_white_reference_without_group12\pairwise\V3.0_04-06_紫色_vs_紫色偏蓝色_白纸归一化两两对比.png
+1,5,深粉红色,粉色偏紫色,0.0490812999829801,0.11002121009395,0.0428226540182671,-155.276000462207,data/processed/v3.0/matlab_white_reference_without_group12\pairwise\V3.0_01-05_深粉红色_vs_粉色偏紫色_白纸归一化两两对比.png
+3,10,橙色,卡其色,0.0540320223136775,0.132143034302757,0.0457158776781309,-165.76778024647,data/processed/v3.0/matlab_white_reference_without_group12\pairwise\V3.0_03-10_橙色_vs_卡其色_白纸归一化两两对比.png
+6,8,紫色偏蓝色,深绿色,0.054164104228075,0.236737155219532,0.0385769891427483,139.400070429816,data/processed/v3.0/matlab_white_reference_without_group12\pairwise\V3.0_06-08_紫色偏蓝色_vs_深绿色_白纸归一化两两对比.png
