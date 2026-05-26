@@ -46,6 +46,19 @@
 pip install -r requirements-analysis.txt
 ```
 
+## Default embedded chain
+
+- 采集端：STM32F103/TCD1304 通过 `USART2` (`PA2/PA3`, `921600 8N1`) 向 STM32G431 提供 3648 点 12 位原始帧。
+- 处理端：STM32G431 完成暗电平估计、中值滤波、Savitzky-Golay 平滑、归一化和下采样。
+- 显示端：STM32G431 通过 `USART3` (`PB10/PB11`, `115200 8N1`) 向 ESP32-S3 输出文本包。
+- 握手线：G431 `PA5(DATA_RDY)` 提示有待发送包，ESP32 `GPIO21(WAKE)` 拉高后 G431 才发送该包。
+
+## Firmware build notes
+
+- `firmware/esp32s3-monitor` 现在已经包含本地 `bsp_cst816.h/.cpp`，克隆仓库后不再缺少触摸驱动头文件。
+- ESP32-S3 工程仍依赖 Arduino 环境中的 `lvgl` 与 `Arduino_GFX_Library`。
+- `hardware/pcb/eda-archives` 保存当前公开版本的 PCB 工程压缩包，压缩包内部文件名可能与仓库文件名不同。
+
 ## Current status
 
 - 已整理光学、结构、PCB、固件和测量数据。
@@ -57,4 +70,3 @@ pip install -r requirements-analysis.txt
 ## License
 
 除文件内另有声明外，本仓库原创代码、文档、硬件设计资料和整理后的数据以 MIT License 发布。第三方文件保留其原始许可证声明，尤其是 STM32 HAL/CMSIS 相关文件。详见 `LICENSE` 和 `NOTICE.md`。
-

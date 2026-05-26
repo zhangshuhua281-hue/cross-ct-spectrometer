@@ -18,6 +18,7 @@ STM32G431RBTx HAL base project for Keil5.
 - Clock: HSI -> PLL -> 170 MHz
 - Input UART: `USART2`, `PA2(TX)` / `PA3(RX)` linked to the STM32F103 TCD1304 capture board
 - Display link UART: `USART3`, `PB10(TX)` / `PB11(RX)` to ESP32-S3 upper display
+- `PA2` is reserved for `USART2_TX` in the default acquisition chain and must not be reused as a debug GPIO
 - Handshake GPIO:
   - `PA5`: `DATA_RDY` output to ESP32 `GPIO18`
   - `PA0`: `WAKE` input from ESP32 `GPIO21`
@@ -74,6 +75,7 @@ STM32G431RBTx HAL base project for Keil5.
   - `DATA_RDY` stays high while a packet is pending
   - if `WAKE` is low, the latest packet is held until ESP32 is ready
   - if `WAKE` is high, the packet is sent immediately
+  - only one packet buffer is kept on the G431 side, so acquisition pauses until the pending packet is drained
 
 ## Next recommended changes
 

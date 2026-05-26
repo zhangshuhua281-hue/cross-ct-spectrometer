@@ -199,6 +199,11 @@ static void emit_pending_packet(void)
     return;
   }
 
+  if (BSP_UART_IsLinkWakeActive() == 0U)
+  {
+    return;
+  }
+
   g_packet_seq++;
   snprintf(line, sizeof(line), "PKT BEGIN SEQ=%lu\r\n", (unsigned long)g_packet_seq);
   (void)BSP_UART_OutputWriteString(line);
@@ -329,25 +334,6 @@ void App_Init(void)
   g_last_valid_count = 0U;
   BSP_UART_SetLinkDataReady(0U);
 
-  /* DIAG: test PA2 pin as GPIO (USART2 TX) */
-  {
-    GPIO_InitTypeDef gpio = {0};
-    gpio.Pin = GPIO_PIN_2;
-    gpio.Mode = GPIO_MODE_OUTPUT_PP;
-    gpio.Pull = GPIO_NOPULL;
-    gpio.Speed = GPIO_SPEED_FREQ_LOW;
-    HAL_GPIO_Init(GPIOA, &gpio);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);  /* LOW ~500ms */
-    for (volatile uint32_t i = 0U; i < 17000000U; i++) { __NOP(); }
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET);     /* HIGH ~500ms */
-    for (volatile uint32_t i = 0U; i < 17000000U; i++) { __NOP(); }
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);   /* LOW ~500ms */
-    for (volatile uint32_t i = 0U; i < 17000000U; i++) { __NOP(); }
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET);     /* HIGH ~500ms */
-    for (volatile uint32_t i = 0U; i < 17000000U; i++) { __NOP(); }
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);   /* hold LOW for measurement */
-  }
-
   emit_info_line("INFO", "STM32G431 image-control ready");
 }
 
@@ -364,20 +350,17 @@ void App_Loop(void)
   }
 
 #if (APP_INPUT_MODE_F103_BINARY != 0U)
-  emit_info_line("DBG1", "pre-write");
   if (BSP_UART_InputWrite(&request, 1U, 20U) != HAL_OK)
   {
     emit_info_line("ERR", "f103 request failed");
     return;
   }
-  emit_info_line("DBG2", "post-write");
 
   if (BSP_UART_InputReceive((uint8_t *)g_frame.sample_x2, sizeof(g_frame.sample_x2), APP_F103_RX_TIMEOUT_MS) != HAL_OK)
   {
     emit_info_line("ERR", "f103 frame timeout");
     return;
   }
-  emit_info_line("DBG3", "post-receive");
 
   App_OnFrameBinary((const uint8_t *)g_frame.sample_x2, (uint16_t)sizeof(g_frame.sample_x2));
 #else
