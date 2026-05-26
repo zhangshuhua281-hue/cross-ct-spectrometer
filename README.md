@@ -53,15 +53,6 @@ pip install -r requirements-analysis.txt
 - V3.0 数据包含 12 组色卡、每组 5 次重复采集，以及 405 nm/780 nm 波长锚点数据。
 - 当前仍需要继续完善定量标定、上位机源码、自动化构建和硬件复现文档。
 
-## Not included
-
-为了让 GitHub 仓库更干净，以下内容没有放入主仓库：
-
-- Keil/Arduino 编译输出、`.o`、`.d`、`.elf`、`.map`、`.axf` 等生成文件。
-- MATLAB `.fig` 二进制图文件。
-- 参考文献 PDF。请在 `docs/references.md` 中保留引用，不直接再分发论文全文。
-- 参赛视频和 PPT/DOCX 源文件。大文件更适合放 GitHub Releases、网盘或项目展示页。
-- 上位机预编译 `.exe`。建议后续补充上位机源码后再纳入仓库。
 
 ## License
 
